@@ -1,14 +1,19 @@
 {
-    "name": "BrowserQuest"
-  , "version": "0.0.1"
-  , "private": false 
-  , "dependencies": {
+  "name": "BrowserQuest",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "build": "cd bin && sh build.sh",
+    "start": "node server/js/main.js"
+  },
+  "dependencies": {
+    "bison": ">0",
+    "express": "^4.14.0",
+    "log": ">0",
+    "memcache": "0.3.0",
+    "sanitizer": "0.1.2",
+    "serve-static": "^1.11.1",
+    "socket.io": ">0",
     "underscore": ">0"
-    , "log": ">0"
-    , "bison": ">0"
-    , "express": ">0"
-    , "socket.io": ">0"
-    , "sanitizer": "0.1.2"
-    , "memcache": "0.3.0"
   }
 }
